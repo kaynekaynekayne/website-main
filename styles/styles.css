@@ -69,18 +69,24 @@ h1{
 }
 
 h4{
-    margin:1.5rem 0;
+    margin:2rem 0;
     text-align: left;
     font-family: 'Gothic A1', sans-serif;
 }
 
 .tools{
-    margin:1.5rem 0;
+    margin:2rem 0;
 }
 
 .tools h5:first-child{
-    color:rgb(90, 90, 90);
+    color:rgb(97, 97, 97);
 }
+
+
+
+.right-content{
+    flex-basis: 50%;
+} 
 
 .btns{
     margin-top:2.5rem;
@@ -93,23 +99,34 @@ h4{
     border-radius:0.4rem;
     color:white;
     font-family: 'M PLUS 2', sans-serif;
+    margin:0 0.3rem;
 }
 
 .web{
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(220, 49, 49);
+    transition:all 0.5s ease;
 }
 
 .git{
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(68, 67, 67);
+    transition:all 0.5s ease;
 }
 
-.right-content{
-    flex-basis: 50%;
-} 
+.web:hover{
+    background-color: rgb(187, 40, 40);
+}
+
+.git:hover{
+    background-color: rgb(28, 28, 28);
+}
 
 .right-img{
     filter:drop-shadow(3px 3px 3px rgb(190, 190, 190));
     transition:transform 0.5s ease;
+}
+
+.right-img:hover{
+    transform:scale(1.05);
 }
 
 
@@ -167,11 +184,20 @@ h4{
     
     section{
         flex-direction: column;
-        
     }
 
     .left-content{
         border-right:none;
         padding:2.5rem;
     }
+
+    .right-content{
+        border-bottom: 1px solid lightgray;
+        padding-bottom:4rem;
+    }
+
+    .right-img{
+        width:85%;
+    }
+    
 }
