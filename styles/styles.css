@@ -187,24 +187,39 @@ h4{
         background-color: gray;
     }
 
-
-    
     section{
         flex-direction: column;
     }
 
     .left-content{
         border-right:none;
-        padding:2.5rem;
+        padding:3rem 3rem 0 3rem;
     }
-
+    
+    .tools{
+        display: none;
+    }
+    
     .right-content{
-        border-bottom: 1px solid lightgray;
-        padding-bottom:4rem;
+        margin-bottom:3rem;
     }
 
     .right-img{
-        width:85%;
+        width:18rem;
+        margin:1rem;
     }
+
+    .btns{
+        margin-top:1rem;
+    }
+    
+    h1{
+        font-size:large;
+    }
+
+    h4{
+        margin:1rem;
+    }
+    
     
 }
