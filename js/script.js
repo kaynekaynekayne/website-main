@@ -4,31 +4,33 @@ const closeBtn=document.querySelector('.close');
 const aside=document.querySelector('aside');
 const asideMenus=document.querySelector('.aside-menus');
 const back=document.querySelector('.back');
+const sections=document.querySelectorAll('section');
 
 
-
+// 메뉴 클릭시 섹션 이동
 navMenus.addEventListener('click',(e)=>{
-    const link=e.target.dataset.link;
-    if(link===null){
+    const target=e.target.dataset.link;
+    if(target==null){
         return;
-    }
-    handleScroll(link);
+    };
+    handleScroll(target);
 });
 
 asideMenus.addEventListener('click',(e)=>{
-    const link=e.target.dataset.link;
-    if(link===null){
+    const target=e.target.dataset.link;
+    if(target==null){
         return;
     }
-    handleScroll(link);
+    handleScroll(target);
 });
 
 const handleScroll=(selector)=>{
+    console.log(selector);
     selector && document.querySelector(selector).scrollIntoView({behavior:'smooth'});
 };
 
 
-
+// 모바일 버젼 메뉴 클릭
 const openMenu=()=>{
     back.className='back active';
     aside.className="active";
@@ -51,3 +53,27 @@ closeBtn.addEventListener('click',()=>{
 back.addEventListener('click',()=>{
     closeMenu();
 })
+
+
+// 스크롤 하면 다음 섹션으로 이동
+
+let page=1;
+document.addEventListener('wheel',(e)=>{
+    e.preventDefault();
+
+    if(e.deltaY>0){
+        if(page==6){
+            return;
+        }
+        page++;
+    } else if(e.deltaY<0){
+        if(page==1){
+            return;
+        }
+        page--;
+    };
+
+    let location=document.querySelector(`#${sections[page-1].id}`).offsetTop;
+    window.scrollTo({top:location, behavior:'smooth'});
+
+},{passive:false});
