@@ -68,7 +68,8 @@ h1{
     font-size:3rem;
 }
 
-h4{
+.desc{
+    display: inline-block;
     margin:2rem 0;
     text-align: left;
     font-family: 'Gothic A1', sans-serif;
@@ -212,7 +213,7 @@ h4{
         font-size:2rem;
     }
 
-    h4{
+    .desc{
         margin:1.5rem 1rem;
     }
     
