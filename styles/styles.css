@@ -7,7 +7,6 @@
     top:0;
     z-index:2;
     width:100%;
-    /* background-color: white; */
 }
 
 .nav-menus{
@@ -22,7 +21,7 @@
 }
 
 .nav-menu:hover{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--light-gray);
 }
 
 .menu-btn{
@@ -61,7 +60,7 @@ section{
 .left-content{
     flex-basis: 50%;
     padding:0 7rem;
-    border-right:1px solid lightgray;
+    border-right:1px solid var(--light-gray);
 }
 
 h1{
@@ -81,12 +80,8 @@ h1{
     justify-content: space-between;
 }
 
-.tools h5:first-child{
-    color:rgb(97, 97, 97);
-}
-
 .frontend,.backend{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark-gray);
 }
 
 
@@ -108,21 +103,21 @@ h1{
 }
 
 .web{
-    background-color: rgb(220, 49, 49);
+    background-color: var(--light-red);
     transition:all 0.5s ease;
 }
 
 .git{
-    background-color: rgb(68, 67, 67);
+    background-color: var(--mid-gray);
     transition:all 0.5s ease;
 }
 
 .web:hover{
-    background-color: rgb(187, 40, 40);
+    background-color: var(--dark-red);
 }
 
 .git:hover{
-    background-color: rgb(28, 28, 28);
+    background-color: var(--dark-gray);
 }
 
 .right-img{
@@ -182,7 +177,7 @@ h1{
     .aside-menu:hover{
         color:white;
         padding:1rem;
-        background-color: gray;
+        background-color: var(--mid-gray);
     }
 
     section{
