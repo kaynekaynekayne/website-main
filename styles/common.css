@@ -1,7 +1,14 @@
 :root{
+    /*color*/
     --light-red:rgb(220, 49, 49);
     --dark-red: rgb(187, 40, 40);
     --light-gray:lightgray;
     --mid-gray:rgb(68, 67, 67);
     --dark-gray:rgb(44, 44, 44);
+
+    /*font size*/
+    --font-large:3rem;
+    --font-mid:2rem;
+    --font-sml:1.2rem;
+    --font-xs:0.8rem;
 }

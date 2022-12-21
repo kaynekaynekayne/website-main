@@ -29,7 +29,7 @@
     cursor:pointer;
     background: transparent;
     border:0;
-    font-size: larger;
+    font-size:var(--font-sml);
 }
 
 aside{
@@ -64,7 +64,7 @@ section{
 }
 
 h1{
-    font-size:3rem;
+    font-size:var(--font-large);
 }
 
 .desc{
@@ -98,7 +98,7 @@ h1{
     padding:0.8rem;
     border-radius:0.4rem;
     color:white;
-    font-size:0.8rem;
+    font-size:var(--font-xs);
     margin:0 0.3rem;
 }
 
@@ -159,7 +159,7 @@ h1{
     }
     
     aside button.close{
-        font-size:1.5rem;
+        font-size:var(--font-mid);
         border:0;
         background-color: transparent;
         position:absolute;
@@ -208,7 +208,7 @@ h1{
     }
     
     h1{
-        font-size:2rem;
+        font-size:var(--font-mid);
     }
 
     .desc{
