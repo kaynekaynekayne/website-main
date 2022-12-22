@@ -97,7 +97,7 @@ h1{
 .btn{
     padding:0.8rem;
     border-radius:0.4rem;
-    color:white;
+    color:var(--white);
     font-size:var(--font-xs);
     margin:0 0.3rem;
 }
@@ -175,7 +175,7 @@ h1{
     }
     
     .aside-menu:hover{
-        color:white;
+        color:var(--white);
         padding:1rem;
         background-color: var(--mid-gray);
     }

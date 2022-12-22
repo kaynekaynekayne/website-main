@@ -8,6 +8,6 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: var(--soft-white);
     font-family: 'M PLUS 2', sans-serif;
 }

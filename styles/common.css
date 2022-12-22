@@ -5,6 +5,8 @@
     --light-gray:lightgray;
     --mid-gray:rgb(68, 67, 67);
     --dark-gray:rgb(44, 44, 44);
+    --white:#fff;
+    --soft-white:whitesmoke;
 
     /*font size*/
     --font-large:3rem;
