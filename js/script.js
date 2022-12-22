@@ -6,6 +6,12 @@ const asideMenus=document.querySelector('.aside-menus');
 const back=document.querySelector('.back');
 const sections=document.querySelectorAll('section');
 
+//라우터 구현
+const about=document.querySelector('.about');
+about.addEventListener('click',()=>{
+    window.history.pushState({},'','/about');
+    
+})
 
 // 메뉴 클릭시 섹션 이동
 navMenus.addEventListener('click',(e)=>{
@@ -40,7 +46,6 @@ const closeMenu=()=>{
     back.className='back';
     aside.className='';
 }
-
 
 menuBtn.addEventListener('click',()=>{
     openMenu();
