@@ -5,6 +5,8 @@ const aside=document.querySelector('aside');
 const asideMenus=document.querySelector('.aside-menus');
 const back=document.querySelector('.back');
 const sections=document.querySelectorAll('section');
+const imgs=document.querySelectorAll('img');
+
 
 //라우터 구현
 const about=document.querySelector('.about');

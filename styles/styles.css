@@ -120,8 +120,8 @@ h1{
     background-color: var(--dark-gray);
 }
 
+
 .right-img{
-    filter:drop-shadow(3px 3px 3px rgb(190, 190, 190));
     transition:transform 0.5s ease;
 }
 
