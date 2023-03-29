@@ -16,6 +16,11 @@ about.addEventListener('click',()=>{
 })
 
 // 메뉴 클릭시 섹션 이동
+
+const handleScroll=(selector)=>{
+    selector && document.querySelector(selector).scrollIntoView({behavior:'smooth'});
+};
+
 navMenus.addEventListener('click',(e)=>{
     const target=e.target.dataset.link;
     if(target==null){
@@ -31,11 +36,6 @@ asideMenus.addEventListener('click',(e)=>{
     }
     handleScroll(target);
 });
-
-const handleScroll=(selector)=>{
-    console.log(selector);
-    selector && document.querySelector(selector).scrollIntoView({behavior:'smooth'});
-};
 
 
 // 모바일 버젼 메뉴 클릭
